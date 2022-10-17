@@ -1,0 +1,12 @@
+#side-nav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #d3d3d3;
+}
+.icons {
+  margin: auto;
+  padding: 30px;
+}

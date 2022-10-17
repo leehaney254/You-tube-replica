@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+#topnav {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+#flexing {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divicon span {
+  padding: 0 10px 0 10px;
+}
+#content {
+  background-color: #f5f5f5;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+#video {
+  flex-grow: 6;
+  margin-right: 0;
+}
+.videoframe {
+  width: 180px;
+  height: 120px;
+}
+#playvid {
+  width: 915px;
+  height: 514px;
+  margin-left: 60px;
+}
+#suggestions {
+  padding-left: 0;
+}
+.options {
+  margin: 5px;
+  padding: 10px;
+  background-color: #e5e4e2;
+  border-radius: 16px;
+}
+#option1 {
+  background-color: black;
+  color: white;
+}
+#suggest-text {
+  margin: 30px 0 30px 0;
+}

@@ -9,48 +9,62 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <script src="https://use.fontawesome.com/85ba53d77f.js"></script>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/play.css" />
     <title>YouTube</title>
   </head>
   <body>
-    <!--I will divide the code into sections-->
-    <div>
-      <!--The top bar-->
-      <nav>
-        <span><i class="fa-brands fa-youtube"></i>YouTube <sup>KE</sup></span>
-        <span
-          ><input type="text" placeholder="search" /><i
-            class="fa-solid fa-magnifying-glass"
-          ></i
-        ></span>
-        <span><i class="fa-solid fa-microphone"></i></span>
-        <span><i class="fa-solid fa-video"></i></span>
-        <span><i class="fa-regular fa-bell"></i></span>
-        <b>L</b>
-      </nav>
-
-      <!--The second top bar-->
-      <header>
-        <span>All</span>
-        <span>Mixes</span>
-        <span>Wealth</span>
-        <span>Live</span>
-        <span>Computer</span>
-        <span>Gaia,inc</span>
-        <span>Computer Programming</span>
-        <span>Chill-out music</span>
-        <span>Comedy</span>
-        <span>Dj mix</span>
-        <span>Humans</span>
-        <span>Electronic Components</span>
-      </header>
-
-      <!--The video section-->
-      <section>
+    <!--The top bar-->
+    <nav id="topnav">
+      <div id="flexing">
+        <div class="divicon">
+          <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+          <span><i class="fa-brands fa-youtube"></i>YouTube<sup>KE</sup></span>
+        </div>
+        <div class="divicon">
+          <span
+            ><input type="text" placeholder="search" /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i
+          ></span>
+          <span><i class="fa-solid fa-microphone"></i></span>
+        </div>
+        <div class="divicon">
+          <span><i class="fa-solid fa-video"></i></span>
+          <span><i class="fa-regular fa-bell"></i></span>
+          <span><b>L</b></span>
+        </div>
+      </div>
+    </nav>
+    <!--Create section for the content-->
+    <div id="content">
+      <div id="video">
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            id="playvid"
+            src="https://www.youtube.com/embed/WxSV3NEPbEY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h4>
+            <b>Computer Science new Grad Appartment tour in Silicon Valley</b>
+            <p>Joma tech</p>
+            <p>142k views.4years ago</p>
+          </h4>
+        </div>
+      </div>
+      <!--Suggestions side-->
+      <div id="suggestions">
+        <div id="suggest-text">
+          <span id="option1" class="options">All</span>
+          <span class="options">Listenable</span>
+          <span class="options">Related</span>
+          <span class="options">form Joma Te</span>
+        </div>
+        <div class="cards">
+          <iframe
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -65,8 +79,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -81,8 +94,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -97,8 +109,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -113,8 +124,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -129,8 +139,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -145,8 +154,7 @@
         </div>
         <div class="cards">
           <iframe
-            width="560"
-            height="315"
+            class="videoframe"
             src="https://www.youtube.com/embed/WxSV3NEPbEY"
             title="YouTube video player"
             frameborder="0"
@@ -159,46 +167,7 @@
             <p>142k views.4years ago</p>
           </h4>
         </div>
-        <div class="cards">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/WxSV3NEPbEY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <h4>
-            <b>Computer Science new Grad Appartment tour in Silicon Valley</b>
-            <p>Joma tech</p>
-            <p>142k views.4years ago</p>
-          </h4>
-        </div>
-      </section>
+      </div>
     </div>
-
-    <!--The side bar-->
-    <aside id="side-nav">
-      <div class="icons">
-        <span><i class="fa-sharp fa-solid fa-bars"></i></span>
-      </div>
-      <div class="icons">
-        <span><i class="fa-sharp fa-solid fa-house"></i></span> Home
-      </div>
-      <div class="icons">
-        <span><i class="fa-regular fa-compass"></i></span> Explore
-      </div>
-      <div class="icons">
-        <span><i class="fa-brands fa-square-youtube"></i></span> Shorts
-      </div>
-      <div class="icons">
-        <span><i class="fa-solid fa-briefcase"></i></span>
-        Subscription
-      </div>
-      <div class="icons">
-        <span><i class="fa-solid fa-bookmark"></i></span> Library
-      </div>
-    </aside>
   </body>
 </html>
